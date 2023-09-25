@@ -60,13 +60,7 @@ namespace Benzinlik
                                             bool CikolataInputSonuc=int.TryParse(Console.ReadLine(),out CikolataInput);
                                             if(CikolataInputSonuc && Cikolata.Adet-CikolataInput>=0)
                                             {
-                                                ((excel.Range)sayfa1.Cells[satırNo, 1]).Value2 = Cikolata.UrunAdı;
-                                                ((excel.Range)sayfa1.Cells[satırNo, 2]).Value2 = Cikolata.Fiyat;
-                                                ((excel.Range)sayfa1.Cells[satırNo, 3]).Value2 = CikolataInput;
-                                                ((excel.Range)sayfa1.Cells[satırNo, 4]).Value2 = (CikolataInput * Cikolata.Fiyat);
-                                                satırNo++;
-                                                Cikolata.Adet -= CikolataInput;
-                                                Console.WriteLine("Satış Başarılı. Tutar: {0}",(CikolataInput*Cikolata.Fiyat));
+                                                satırNo = SatisYap(Cikolata,sayfa1,satırNo,CikolataInput);
                                             }
                                             else
                                             {
@@ -79,13 +73,7 @@ namespace Benzinlik
                                             bool GazozInputSonuc = int.TryParse(Console.ReadLine(), out GazozInput);
                                             if (GazozInputSonuc && Gazoz.Adet-GazozInput>0)
                                             {
-                                                ((excel.Range)sayfa1.Cells[satırNo, 1]).Value2 = Gazoz.UrunAdı;
-                                                ((excel.Range)sayfa1.Cells[satırNo, 2]).Value2 = Gazoz.Fiyat;
-                                                ((excel.Range)sayfa1.Cells[satırNo, 3]).Value2 = GazozInput;
-                                                ((excel.Range)sayfa1.Cells[satırNo, 4]).Value2 = (GazozInput * Gazoz.Fiyat);
-                                                satırNo++;
-                                                Gazoz.Adet -= GazozInput;
-                                                Console.WriteLine("Satış Başarılı. Tutar: {0}", (GazozInput * Gazoz.Fiyat));
+                                                satırNo = SatisYap(Gazoz, sayfa1, satırNo, GazozInput);
                                             }
                                             else
                                             {
@@ -98,14 +86,7 @@ namespace Benzinlik
                                             bool BiskuviInputSonuc = int.TryParse(Console.ReadLine(), out BiskuviInput);
                                             if (BiskuviInputSonuc && Biskuvi.Adet - BiskuviInput > 0)
                                             {
-                                                ((excel.Range)sayfa1.Cells[satırNo, 1]).Value2 = Biskuvi.UrunAdı;
-                                                ((excel.Range)sayfa1.Cells[satırNo, 2]).Value2 = Biskuvi.Fiyat;
-                                                ((excel.Range)sayfa1.Cells[satırNo, 3]).Value2 = BiskuviInput;
-                                                ((excel.Range)sayfa1.Cells[satırNo, 4]).Value2 = (BiskuviInput * Biskuvi.Fiyat);
-                                                satırNo++;
-
-                                                Biskuvi.Adet -= BiskuviInput;
-                                                Console.WriteLine("Satış Başarılı. Tutar: {0}", (BiskuviInput * Biskuvi.Fiyat));
+                                                satırNo = SatisYap(Biskuvi, sayfa1, satırNo, BiskuviInput);
                                             }
                                             else
                                             {
@@ -118,14 +99,7 @@ namespace Benzinlik
                                             bool BenzinInputSonuc = int.TryParse(Console.ReadLine(), out BenzinInput);
                                             if (BenzinInputSonuc && Benzin.Adet - BenzinInput > 0)
                                             {
-                                                ((excel.Range)sayfa1.Cells[satırNo, 1]).Value2 = Benzin.UrunAdı;
-                                                ((excel.Range)sayfa1.Cells[satırNo, 2]).Value2 = Benzin.Fiyat;
-                                                ((excel.Range)sayfa1.Cells[satırNo, 3]).Value2 = BenzinInput;
-                                                ((excel.Range)sayfa1.Cells[satırNo, 4]).Value2 = (BenzinInput * Benzin.Fiyat);
-                                                satırNo++;
-
-                                                Benzin.Adet -= BenzinInput;
-                                                Console.WriteLine("Satış Başarılı. Tutar: {0}", (BenzinInput * Benzin.Fiyat));
+                                                satırNo = SatisYap(Benzin, sayfa1, satırNo, BenzinInput);
                                             }
                                             else
                                             {
@@ -166,6 +140,17 @@ namespace Benzinlik
             }
 
 
+        }
+
+        static int SatisYap(Urun urun, excel.Worksheet sayfa, int satirNo, int urunInput)
+        {
+            ((excel.Range)sayfa.Cells[satirNo, 1]).Value2 = urun.UrunAdı;
+            ((excel.Range)sayfa.Cells[satirNo, 2]).Value2 = urun.Fiyat;
+            ((excel.Range)sayfa.Cells[satirNo, 3]).Value2 = urunInput;
+            ((excel.Range)sayfa.Cells[satirNo, 4]).Value2 = (urunInput * urun.Fiyat);
+            urun.Adet -= urunInput;
+            Console.WriteLine("Satış Başarılı. Tutar: {0}", (urunInput * urun.Fiyat));
+            return ++satirNo;
         }
     }
 }

@@ -1,0 +1,16 @@
+C:\Users\paral\source\repos\CSharpBootcamp\ExcelTutorial\Excel Tutorial\bin\Debug\net6.0\Excel_Tutorial.exe
+C:\Users\paral\source\repos\CSharpBootcamp\ExcelTutorial\Excel Tutorial\bin\Debug\net6.0\Excel_Tutorial.deps.json
+C:\Users\paral\source\repos\CSharpBootcamp\ExcelTutorial\Excel Tutorial\bin\Debug\net6.0\Excel_Tutorial.runtimeconfig.json
+C:\Users\paral\source\repos\CSharpBootcamp\ExcelTutorial\Excel Tutorial\bin\Debug\net6.0\Excel_Tutorial.dll
+C:\Users\paral\source\repos\CSharpBootcamp\ExcelTutorial\Excel Tutorial\bin\Debug\net6.0\Excel_Tutorial.pdb
+C:\Users\paral\source\repos\CSharpBootcamp\ExcelTutorial\Excel Tutorial\obj\Debug\net6.0\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\paral\source\repos\CSharpBootcamp\ExcelTutorial\Excel Tutorial\obj\Debug\net6.0\Excel_Tutorial.csproj.ResolveComReference.cache
+C:\Users\paral\source\repos\CSharpBootcamp\ExcelTutorial\Excel Tutorial\obj\Debug\net6.0\Excel_Tutorial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paral\source\repos\CSharpBootcamp\ExcelTutorial\Excel Tutorial\obj\Debug\net6.0\Excel_Tutorial.AssemblyInfoInputs.cache
+C:\Users\paral\source\repos\CSharpBootcamp\ExcelTutorial\Excel Tutorial\obj\Debug\net6.0\Excel_Tutorial.AssemblyInfo.cs
+C:\Users\paral\source\repos\CSharpBootcamp\ExcelTutorial\Excel Tutorial\obj\Debug\net6.0\Excel_Tutorial.csproj.CoreCompileInputs.cache
+C:\Users\paral\source\repos\CSharpBootcamp\ExcelTutorial\Excel Tutorial\obj\Debug\net6.0\Excel_Tutorial.dll
+C:\Users\paral\source\repos\CSharpBootcamp\ExcelTutorial\Excel Tutorial\obj\Debug\net6.0\refint\Excel_Tutorial.dll
+C:\Users\paral\source\repos\CSharpBootcamp\ExcelTutorial\Excel Tutorial\obj\Debug\net6.0\Excel_Tutorial.pdb
+C:\Users\paral\source\repos\CSharpBootcamp\ExcelTutorial\Excel Tutorial\obj\Debug\net6.0\Excel_Tutorial.genruntimeconfig.cache
+C:\Users\paral\source\repos\CSharpBootcamp\ExcelTutorial\Excel Tutorial\obj\Debug\net6.0\ref\Excel_Tutorial.dll

@@ -1,0 +1,16 @@
+C:\Users\paral\source\repos\CSharpBootcamp\Odev2.1\Menu\bin\Debug\net6.0\Benzinlik.exe
+C:\Users\paral\source\repos\CSharpBootcamp\Odev2.1\Menu\bin\Debug\net6.0\Benzinlik.deps.json
+C:\Users\paral\source\repos\CSharpBootcamp\Odev2.1\Menu\bin\Debug\net6.0\Benzinlik.runtimeconfig.json
+C:\Users\paral\source\repos\CSharpBootcamp\Odev2.1\Menu\bin\Debug\net6.0\Benzinlik.dll
+C:\Users\paral\source\repos\CSharpBootcamp\Odev2.1\Menu\bin\Debug\net6.0\Benzinlik.pdb
+C:\Users\paral\source\repos\CSharpBootcamp\Odev2.1\Menu\obj\Debug\net6.0\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\paral\source\repos\CSharpBootcamp\Odev2.1\Menu\obj\Debug\net6.0\Benzinlik.csproj.ResolveComReference.cache
+C:\Users\paral\source\repos\CSharpBootcamp\Odev2.1\Menu\obj\Debug\net6.0\Benzinlik.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paral\source\repos\CSharpBootcamp\Odev2.1\Menu\obj\Debug\net6.0\Benzinlik.AssemblyInfoInputs.cache
+C:\Users\paral\source\repos\CSharpBootcamp\Odev2.1\Menu\obj\Debug\net6.0\Benzinlik.AssemblyInfo.cs
+C:\Users\paral\source\repos\CSharpBootcamp\Odev2.1\Menu\obj\Debug\net6.0\Benzinlik.csproj.CoreCompileInputs.cache
+C:\Users\paral\source\repos\CSharpBootcamp\Odev2.1\Menu\obj\Debug\net6.0\Benzinlik.dll
+C:\Users\paral\source\repos\CSharpBootcamp\Odev2.1\Menu\obj\Debug\net6.0\refint\Benzinlik.dll
+C:\Users\paral\source\repos\CSharpBootcamp\Odev2.1\Menu\obj\Debug\net6.0\Benzinlik.pdb
+C:\Users\paral\source\repos\CSharpBootcamp\Odev2.1\Menu\obj\Debug\net6.0\Benzinlik.genruntimeconfig.cache
+C:\Users\paral\source\repos\CSharpBootcamp\Odev2.1\Menu\obj\Debug\net6.0\ref\Benzinlik.dll

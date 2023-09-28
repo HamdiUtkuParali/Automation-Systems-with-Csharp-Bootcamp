@@ -3,6 +3,8 @@ namespace Benzinlik
 {
     internal class Program
     {
+        public delegate void MyDelegate();
+
         static void Main(string[] args)
         {
 
@@ -16,15 +18,15 @@ namespace Benzinlik
             int satırNo = 2;
             int sutunNo = 1;
             excel.Range alan = (excel.Range)sayfa1.Cells[satırNo, sutunNo];
-            
-            Urun Cikolata = new Urun("Çikolata",5,1000);
-            Urun Gazoz = new Urun("Gazoz",25,1000);
+
+            Urun Cikolata = new Urun("Çikolata", 5, 1000);
+            Urun Gazoz = new Urun("Gazoz", 25, 1000);
             Urun Biskuvi = new Urun("Biskuvi", 10, 1000);
-            Urun Benzin = new Urun ("Benzin",35,1000);
+            Urun Benzin = new Urun("Benzin", 35, 1000);
 
             bool AnaMenuDurum = true;
 
-            while (AnaMenuDurum) 
+            while (AnaMenuDurum)
             {
                 Console.WriteLine("\n1-Satış Yap");
                 Console.WriteLine("2-Rapor Görüntüle");
@@ -33,14 +35,14 @@ namespace Benzinlik
 
                 int AnaMenuInput;
                 bool AnaMenusonuc = int.TryParse(Console.ReadLine(), out AnaMenuInput);
-
-                if (AnaMenusonuc) 
+                Console.Clear();
+                if (AnaMenusonuc)
                 {
-                    switch (AnaMenuInput) 
+                    switch (AnaMenuInput)
                     {
                         case 1:
                             bool UrunMenusu = true;
-                            while(UrunMenusu)
+                            while (UrunMenusu)
                             {
                                 Console.WriteLine("\n1-Çikolata(5TL)");
                                 Console.WriteLine("2-Gazoz(25TL)");
@@ -50,17 +52,19 @@ namespace Benzinlik
                                 Console.Write("Sayı Girin:");
                                 int SatisMenuInput;
                                 bool SatisMenuSonuc = int.TryParse(Console.ReadLine(), out SatisMenuInput);
+                                Console.Clear();
                                 if (SatisMenuSonuc)
                                 {
-                                    switch (SatisMenuInput) 
+                                    switch (SatisMenuInput)
                                     {
                                         case 1:
                                             Console.WriteLine("Ürün adedi girin:");
                                             int CikolataInput;
-                                            bool CikolataInputSonuc=int.TryParse(Console.ReadLine(),out CikolataInput);
-                                            if(CikolataInputSonuc && Cikolata.Adet-CikolataInput>=0)
+                                            bool CikolataInputSonuc = int.TryParse(Console.ReadLine(), out CikolataInput);
+                                            Console.Clear();
+                                            if (CikolataInputSonuc && Cikolata.Adet - CikolataInput >= 0)
                                             {
-                                                satırNo = SatisYap(Cikolata,sayfa1,satırNo,CikolataInput);
+                                                satırNo = SatisYap(Cikolata, sayfa1, satırNo, CikolataInput);
                                             }
                                             else
                                             {
@@ -71,7 +75,8 @@ namespace Benzinlik
                                             Console.WriteLine("Ürün adedi girin:");
                                             int GazozInput;
                                             bool GazozInputSonuc = int.TryParse(Console.ReadLine(), out GazozInput);
-                                            if (GazozInputSonuc && Gazoz.Adet-GazozInput>0)
+                                            Console.Clear();
+                                            if (GazozInputSonuc && Gazoz.Adet - GazozInput > 0)
                                             {
                                                 satırNo = SatisYap(Gazoz, sayfa1, satırNo, GazozInput);
                                             }
@@ -84,6 +89,7 @@ namespace Benzinlik
                                             Console.WriteLine("Ürün adedi girin:");
                                             int BiskuviInput;
                                             bool BiskuviInputSonuc = int.TryParse(Console.ReadLine(), out BiskuviInput);
+                                            Console.Clear();
                                             if (BiskuviInputSonuc && Biskuvi.Adet - BiskuviInput > 0)
                                             {
                                                 satırNo = SatisYap(Biskuvi, sayfa1, satırNo, BiskuviInput);
@@ -97,6 +103,7 @@ namespace Benzinlik
                                             Console.WriteLine("Ürün adedi girin:");
                                             int BenzinInput;
                                             bool BenzinInputSonuc = int.TryParse(Console.ReadLine(), out BenzinInput);
+                                            Console.Clear();
                                             if (BenzinInputSonuc && Benzin.Adet - BenzinInput > 0)
                                             {
                                                 satırNo = SatisYap(Benzin, sayfa1, satırNo, BenzinInput);
@@ -109,7 +116,7 @@ namespace Benzinlik
                                         case 5:
                                             UrunMenusu = false;
                                             break;
-                                        default: 
+                                        default:
                                             Console.WriteLine("\nHatalı Giriş\n");
                                             break;
                                     }
@@ -152,5 +159,6 @@ namespace Benzinlik
             Console.WriteLine("Satış Başarılı. Tutar: {0}", (urunInput * urun.Fiyat));
             return ++satirNo;
         }
+
     }
 }

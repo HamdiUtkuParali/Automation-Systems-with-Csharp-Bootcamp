@@ -30,22 +30,23 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.tbxTaskDescAdd = new System.Windows.Forms.TextBox();
+            this.lblTaskDescAdd = new System.Windows.Forms.Label();
+            this.tbxTaskNameAdd = new System.Windows.Forms.TextBox();
+            this.lblTaskNameAdd = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.tbxTaskNameDelete = new System.Windows.Forms.TextBox();
+            this.tbxTaskDescDelete = new System.Windows.Forms.TextBox();
+            this.lblTaskDescDelete = new System.Windows.Forms.Label();
+            this.lblTaskNameDelete = new System.Windows.Forms.Label();
+            this.dgwToDoList = new System.Windows.Forms.DataGridView();
+            this.btnTaskComplete = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwToDoList)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -60,11 +61,11 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.textBox2);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.textBox1);
-            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Controls.Add(this.btnAdd);
+            this.tabPage1.Controls.Add(this.tbxTaskDescAdd);
+            this.tabPage1.Controls.Add(this.lblTaskDescAdd);
+            this.tabPage1.Controls.Add(this.tbxTaskNameAdd);
+            this.tabPage1.Controls.Add(this.lblTaskNameAdd);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -73,55 +74,56 @@
             this.tabPage1.Text = "Ekle";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnAdd
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(443, 6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 84);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Ekle";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAdd.Location = new System.Drawing.Point(443, 6);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(105, 84);
+            this.btnAdd.TabIndex = 4;
+            this.btnAdd.Text = "Ekle";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // textBox2
+            // tbxTaskDescAdd
             // 
-            this.textBox2.Location = new System.Drawing.Point(104, 59);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(261, 20);
-            this.textBox2.TabIndex = 3;
+            this.tbxTaskDescAdd.Location = new System.Drawing.Point(104, 59);
+            this.tbxTaskDescAdd.Name = "tbxTaskDescAdd";
+            this.tbxTaskDescAdd.Size = new System.Drawing.Size(261, 20);
+            this.tbxTaskDescAdd.TabIndex = 3;
             // 
-            // label2
+            // lblTaskDescAdd
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 62);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Görev Açıklaması:";
+            this.lblTaskDescAdd.AutoSize = true;
+            this.lblTaskDescAdd.Location = new System.Drawing.Point(6, 62);
+            this.lblTaskDescAdd.Name = "lblTaskDescAdd";
+            this.lblTaskDescAdd.Size = new System.Drawing.Size(92, 13);
+            this.lblTaskDescAdd.TabIndex = 2;
+            this.lblTaskDescAdd.Text = "Görev Açıklaması:";
             // 
-            // textBox1
+            // tbxTaskNameAdd
             // 
-            this.textBox1.Location = new System.Drawing.Point(104, 17);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(261, 20);
-            this.textBox1.TabIndex = 1;
+            this.tbxTaskNameAdd.Location = new System.Drawing.Point(104, 17);
+            this.tbxTaskNameAdd.Name = "tbxTaskNameAdd";
+            this.tbxTaskNameAdd.Size = new System.Drawing.Size(261, 20);
+            this.tbxTaskNameAdd.TabIndex = 1;
             // 
-            // label1
+            // lblTaskNameAdd
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Görev Adı:";
+            this.lblTaskNameAdd.AutoSize = true;
+            this.lblTaskNameAdd.Location = new System.Drawing.Point(6, 20);
+            this.lblTaskNameAdd.Name = "lblTaskNameAdd";
+            this.lblTaskNameAdd.Size = new System.Drawing.Size(57, 13);
+            this.lblTaskNameAdd.TabIndex = 0;
+            this.lblTaskNameAdd.Text = "Görev Adı:";
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.button2);
-            this.tabPage2.Controls.Add(this.textBox4);
-            this.tabPage2.Controls.Add(this.textBox3);
-            this.tabPage2.Controls.Add(this.label4);
-            this.tabPage2.Controls.Add(this.label3);
+            this.tabPage2.Controls.Add(this.btnDelete);
+            this.tabPage2.Controls.Add(this.tbxTaskNameDelete);
+            this.tabPage2.Controls.Add(this.tbxTaskDescDelete);
+            this.tabPage2.Controls.Add(this.lblTaskDescDelete);
+            this.tabPage2.Controls.Add(this.lblTaskNameDelete);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -130,73 +132,87 @@
             this.tabPage2.Text = "Sil";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnDelete
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(443, 6);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(105, 84);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Sil";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnDelete.Location = new System.Drawing.Point(443, 6);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(105, 84);
+            this.btnDelete.TabIndex = 4;
+            this.btnDelete.Text = "Sil";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // textBox4
+            // tbxTaskNameDelete
             // 
-            this.textBox4.Location = new System.Drawing.Point(104, 17);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(261, 20);
-            this.textBox4.TabIndex = 3;
+            this.tbxTaskNameDelete.Location = new System.Drawing.Point(104, 17);
+            this.tbxTaskNameDelete.Name = "tbxTaskNameDelete";
+            this.tbxTaskNameDelete.Size = new System.Drawing.Size(261, 20);
+            this.tbxTaskNameDelete.TabIndex = 3;
             // 
-            // textBox3
+            // tbxTaskDescDelete
             // 
-            this.textBox3.Location = new System.Drawing.Point(104, 59);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(261, 20);
-            this.textBox3.TabIndex = 2;
+            this.tbxTaskDescDelete.Location = new System.Drawing.Point(104, 59);
+            this.tbxTaskDescDelete.Name = "tbxTaskDescDelete";
+            this.tbxTaskDescDelete.Size = new System.Drawing.Size(261, 20);
+            this.tbxTaskDescDelete.TabIndex = 2;
             // 
-            // label4
+            // lblTaskDescDelete
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 62);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 13);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Görev Açıklaması:";
+            this.lblTaskDescDelete.AutoSize = true;
+            this.lblTaskDescDelete.Location = new System.Drawing.Point(6, 62);
+            this.lblTaskDescDelete.Name = "lblTaskDescDelete";
+            this.lblTaskDescDelete.Size = new System.Drawing.Size(92, 13);
+            this.lblTaskDescDelete.TabIndex = 1;
+            this.lblTaskDescDelete.Text = "Görev Açıklaması:";
             // 
-            // label3
+            // lblTaskNameDelete
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 20);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Görev Adı:";
+            this.lblTaskNameDelete.AutoSize = true;
+            this.lblTaskNameDelete.Location = new System.Drawing.Point(6, 20);
+            this.lblTaskNameDelete.Name = "lblTaskNameDelete";
+            this.lblTaskNameDelete.Size = new System.Drawing.Size(57, 13);
+            this.lblTaskNameDelete.TabIndex = 0;
+            this.lblTaskNameDelete.Text = "Görev Adı:";
             // 
-            // dataGridView1
+            // dgwToDoList
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 141);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(592, 433);
-            this.dataGridView1.TabIndex = 1;
+            this.dgwToDoList.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dgwToDoList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgwToDoList.Location = new System.Drawing.Point(12, 141);
+            this.dgwToDoList.Name = "dgwToDoList";
+            this.dgwToDoList.Size = new System.Drawing.Size(592, 433);
+            this.dgwToDoList.TabIndex = 1;
+            this.dgwToDoList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwToDoList_CellClick);
+            // 
+            // btnTaskComplete
+            // 
+            this.btnTaskComplete.Location = new System.Drawing.Point(459, 590);
+            this.btnTaskComplete.Name = "btnTaskComplete";
+            this.btnTaskComplete.Size = new System.Drawing.Size(145, 36);
+            this.btnTaskComplete.TabIndex = 2;
+            this.btnTaskComplete.Text = "Görevi Tamamla";
+            this.btnTaskComplete.UseVisualStyleBackColor = true;
+            this.btnTaskComplete.Click += new System.EventHandler(this.btnTaskComplete_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(616, 598);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(616, 643);
+            this.Controls.Add(this.btnTaskComplete);
+            this.Controls.Add(this.dgwToDoList);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "ToDoList";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwToDoList)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -206,17 +222,18 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.TextBox tbxTaskDescAdd;
+        private System.Windows.Forms.Label lblTaskDescAdd;
+        private System.Windows.Forms.TextBox tbxTaskNameAdd;
+        private System.Windows.Forms.Label lblTaskNameAdd;
+        private System.Windows.Forms.Label lblTaskDescDelete;
+        private System.Windows.Forms.Label lblTaskNameDelete;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.TextBox tbxTaskNameDelete;
+        private System.Windows.Forms.TextBox tbxTaskDescDelete;
+        private System.Windows.Forms.DataGridView dgwToDoList;
+        private System.Windows.Forms.Button btnTaskComplete;
     }
 }
 
